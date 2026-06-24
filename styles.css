@@ -389,12 +389,13 @@ h3 {
 }
 
 .feature-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .feature-card,
 .testimonial,
-.price-card {
+.price-card,
+.install-steps article {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -460,6 +461,75 @@ h3 {
     linear-gradient(90deg, var(--text) 50%, transparent 0) 0 0 / 12px 12px,
     linear-gradient(var(--text) 50%, transparent 0) 0 0 / 12px 12px,
     var(--surface);
+}
+
+.palette-demo {
+  justify-content: center;
+  gap: 8px;
+}
+
+.palette-demo span {
+  width: 30px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+}
+
+.palette-demo span:nth-child(1) {
+  background: #4477aa;
+}
+
+.palette-demo span:nth-child(2) {
+  background: #66ccee;
+  animation: lift 2.8s ease-in-out infinite;
+}
+
+.palette-demo span:nth-child(3) {
+  background: #228833;
+}
+
+.palette-demo span:nth-child(4) {
+  background: #ee6677;
+  animation: lift 2.8s ease-in-out infinite;
+}
+
+.install-section {
+  padding-top: 54px;
+}
+
+.install-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.install-steps article {
+  padding: 20px;
+}
+
+.install-steps span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.install-steps p,
+.install-note {
+  color: var(--muted);
+}
+
+.install-note {
+  max-width: 680px;
+  margin: 16px 0 0;
+  font-size: 14px;
 }
 
 .split-section {
@@ -672,6 +742,10 @@ details p {
   }
 
   .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .install-steps {
     grid-template-columns: 1fr;
   }
 }

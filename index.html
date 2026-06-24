@@ -16,11 +16,12 @@
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#features">Utilities</a>
+        <a href="#install">Install</a>
         <a href="#comparison">Compare</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="header-cta" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.3/PaperBar.dmg">Download</a>
+      <a class="header-cta" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.4/PaperBar.dmg">Download</a>
     </header>
 
     <main id="top">
@@ -30,7 +31,7 @@
           <h1>Scientific writing utilities. One click away.</h1>
           <p class="hero-subtitle">Daily utilities for papers, posters, and LaTeX work — local on your Mac, without hunting for online converters, cookies, or upload forms.</p>
           <div class="hero-actions">
-            <a class="button primary" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.3/PaperBar.dmg">Download for macOS</a>
+            <a class="button primary" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.4/PaperBar.dmg">Download for macOS</a>
             <a class="button secondary" href="https://github.com/epigani/paperbar-site/releases">Release notes</a>
           </div>
           <p class="compatibility">macOS 13 or newer. Apple Silicon first. Free beta.</p>
@@ -54,6 +55,7 @@
               <button>Reference Cleaner <span>⌥⌘3</span></button>
               <button>QR Generator <span>⌥⌘4</span></button>
               <button>PDF to Citation <span>⌥⌘5</span></button>
+              <button>Color Tools <span>⌥⌘6</span></button>
             </div>
             <div class="utility-window">
               <div class="window-controls">
@@ -80,6 +82,31 @@
         </div>
       </section>
 
+      <section id="install" class="section install-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Install Beta</p>
+          <h2>Download. Drag. Open once.</h2>
+        </div>
+        <div class="install-steps reveal">
+          <article>
+            <span>1</span>
+            <h3>Open the DMG</h3>
+            <p>Drag PaperBar.app from the left onto Applications on the right.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Approve the beta</h3>
+            <p>The current beta is not notarized. Control-click PaperBar in Applications and choose Open.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>If macOS blocks it</h3>
+            <p>Open System Settings > Privacy &amp; Security and choose Open Anyway for PaperBar.</p>
+          </article>
+        </div>
+        <p class="install-note reveal">This is a one-time Gatekeeper exception for the unsigned beta, not a PaperBar account or cloud permission.</p>
+      </section>
+
       <section id="features" class="section">
         <div class="section-heading reveal">
           <p class="eyebrow">Utilities</p>
@@ -92,7 +119,7 @@
               <span>@article{...}</span>
             </div>
             <h3>DOI → BibTeX</h3>
-            <p>Paste a DOI and instantly get a BibTeX entry.</p>
+            <p>Paste a DOI, URL, arXiv ID, or citation text and get BibTeX.</p>
           </article>
           <article class="feature-card reveal">
             <div class="demo-strip table-demo" aria-hidden="true">
@@ -118,6 +145,16 @@
             </div>
             <h3>QR Generator</h3>
             <p>Generate QR codes for papers, posters, and talks.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="demo-strip palette-demo" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <h3>Color Tools</h3>
+            <p>Pick colors, convert RGB to HEX, and create colorblind-safe palettes.</p>
           </article>
         </div>
       </section>
@@ -172,6 +209,11 @@
                 <td>Use a converter page and paste data into an online form.</td>
                 <td>Paste table. Get `tabular`.</td>
               </tr>
+              <tr>
+                <td>Figure colors</td>
+                <td>Search for a color picker or palette website.</td>
+                <td>Pick color. Copy HEX.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -208,7 +250,7 @@
             <h3>Free</h3>
             <p class="price">$0</p>
             <p>Core utilities for writing, cleaning, and sharing paper references.</p>
-            <a class="button secondary" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.3/PaperBar.dmg">Download</a>
+            <a class="button secondary" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.4/PaperBar.dmg">Download</a>
           </article>
           <article class="price-card highlighted reveal">
             <h3>PaperBar Pro</h3>
@@ -239,7 +281,11 @@
           </details>
           <details>
             <summary>Is my data uploaded anywhere?</summary>
-            <p>Tables, BibTeX files, QR generation, and PDF DOI extraction stay on your Mac. DOI lookup sends a citation query to Crossref when needed. There is no PaperBar server.</p>
+            <p>Tables, BibTeX files, color tools, QR generation, and PDF DOI extraction stay on your Mac. DOI lookup sends a citation query to Crossref when needed. There is no PaperBar server.</p>
+          </details>
+          <details>
+            <summary>Does PaperBar need macOS privacy permissions?</summary>
+            <p>Most utilities do not. The unsigned beta may need a one-time approval in System Settings > Privacy &amp; Security. If you use screen color picking, macOS may ask for screen access; PaperBar uses it only to sample the color you select.</p>
           </details>
           <details>
             <summary>Is PaperBar an AI assistant?</summary>
@@ -247,7 +293,7 @@
           </details>
           <details>
             <summary>Why does macOS say the developer cannot be verified?</summary>
-            <p>The free beta is not notarized yet. After downloading, open the DMG, copy PaperBar to Applications, then Control-click PaperBar and choose Open.</p>
+            <p>The free beta is not notarized yet. After downloading, open the DMG, drag PaperBar to Applications, then Control-click PaperBar and choose Open. If macOS still blocks it, use Open Anyway in System Settings > Privacy &amp; Security.</p>
           </details>
         </div>
       </section>
@@ -259,7 +305,7 @@
         <span>PaperBar</span>
       </a>
       <nav aria-label="Footer navigation">
-        <a href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.3/PaperBar.dmg">Download</a>
+        <a href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.4/PaperBar.dmg">Download</a>
         <a href="https://github.com/epigani/paperbar-site/releases">Releases</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="mailto:contact@paperbar.app">Contact</a>
