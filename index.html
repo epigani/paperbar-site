@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PaperBar is a native macOS menu bar app with small scientific-writing utilities for researchers who write papers in LaTeX.">
+    <meta name="theme-color" content="#f7f5f1">
+    <title>PaperBar - Scientific writing utilities for macOS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="PaperBar home">
+        <span class="brand-mark">P</span>
+        <span>PaperBar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Utilities</a>
+        <a href="#comparison">Compare</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/epigani/paperbar-site/releases/latest/download/PaperBar.dmg">Download</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Native macOS menu bar app</p>
+          <h1>Scientific writing utilities. One click away.</h1>
+          <p class="hero-subtitle">Convert DOIs to BibTeX, clean bibliographies, generate LaTeX tables and more — directly from your Mac menu bar.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/epigani/paperbar-site/releases/latest/download/PaperBar.dmg">Download for macOS</a>
+            <a class="button secondary" href="https://github.com/epigani/paperbar-site/releases">Release notes</a>
+          </div>
+          <p class="compatibility">macOS 13 or newer. Apple Silicon first. Free beta.</p>
+        </div>
+
+        <div class="hero-product reveal" aria-label="PaperBar app preview">
+          <div class="menu-bar">
+            <span class="apple-dot"></span>
+            <span>Finder</span>
+            <span>File</span>
+            <span>Edit</span>
+            <span class="menu-spacer"></span>
+            <span class="menu-pill">PaperBar</span>
+            <span>10:24</span>
+          </div>
+          <div class="desktop-shot">
+            <div class="menu-popover">
+              <div class="popover-title">PaperBar</div>
+              <button>DOI to BibTeX <span>⌥⌘1</span></button>
+              <button>Table to LaTeX <span>⌥⌘2</span></button>
+              <button>Reference Cleaner <span>⌥⌘3</span></button>
+              <button>QR Generator <span>⌥⌘4</span></button>
+              <button>PDF to Citation <span>⌥⌘5</span></button>
+            </div>
+            <div class="utility-window">
+              <div class="window-controls">
+                <span></span><span></span><span></span>
+              </div>
+              <h2>DOI to BibTeX</h2>
+              <div class="input-line">10.1038/s41586-020-2649-2</div>
+              <div class="toolbar-line">
+                <span>Paste</span>
+                <span>Fetch</span>
+                <span class="toolbar-gap"></span>
+                <span>Copy</span>
+                <span>Export</span>
+              </div>
+              <pre>@article{callaway2020time,
+  author = {Callaway, Ewen},
+  title = {The race for coronavirus vaccines},
+  journal = {Nature},
+  year = {2020},
+  doi = {10.1038/s41586-020-2649-2}
+}</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Utilities</p>
+          <h2>Small tools for daily paper work.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="demo-strip doi-demo" aria-hidden="true">
+              <span>10.1038/...</span>
+              <span>@article{...}</span>
+            </div>
+            <h3>DOI → BibTeX</h3>
+            <p>Paste a DOI and instantly get a BibTeX entry.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="demo-strip table-demo" aria-hidden="true">
+              <span>CSV</span>
+              <span>TSV</span>
+              <span>tabular</span>
+            </div>
+            <h3>Table → LaTeX</h3>
+            <p>Convert CSV, TSV, or clipboard tables into publication-ready LaTeX.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="demo-strip clean-demo" aria-hidden="true">
+              <span>52 refs</span>
+              <span>48 clean</span>
+            </div>
+            <h3>Reference Cleaner</h3>
+            <p>Deduplicate and organize BibTeX libraries.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="demo-strip qr-demo" aria-hidden="true">
+              <span class="qr-grid"></span>
+              <span>PNG</span>
+            </div>
+            <h3>QR Generator</h3>
+            <p>Generate QR codes for papers, posters, and talks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why PaperBar</p>
+          <h2>Built for researchers, not accounts.</h2>
+        </div>
+        <ul class="principle-list reveal">
+          <li>No accounts.</li>
+          <li>No subscriptions.</li>
+          <li>No cloud.</li>
+          <li>Native macOS.</li>
+          <li>Privacy friendly.</li>
+          <li>Works offline whenever possible.</li>
+        </ul>
+      </section>
+
+      <section id="comparison" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Comparison</p>
+          <h2>Less switching. Fewer tabs.</h2>
+        </div>
+        <div class="comparison-wrap reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Traditional workflow</th>
+                <th>PaperBar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DOI → BibTeX</td>
+                <td>Open a browser, search metadata, copy, clean.</td>
+                <td>Paste DOI. Copy BibTeX.</td>
+              </tr>
+              <tr>
+                <td>Clean bibliography</td>
+                <td>Scan duplicates by hand or import into a manager.</td>
+                <td>Drop a `.bib`. Export clean.</td>
+              </tr>
+              <tr>
+                <td>Generate QR code</td>
+                <td>Use a website, upload or paste the link, download.</td>
+                <td>Paste URL. Copy PNG.</td>
+              </tr>
+              <tr>
+                <td>Convert table to LaTeX</td>
+                <td>Use a converter page and fix escaping manually.</td>
+                <td>Paste table. Get `tabular`.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Early Notes</p>
+          <h2>For the people who live in PDFs and `.tex` files.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial reveal">
+            <blockquote>“This is exactly the kind of tiny macOS tool I keep open while writing methods sections.”</blockquote>
+            <figcaption>Computational biology postdoc</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>“The table converter saves me from opening yet another browser tab during revisions.”</blockquote>
+            <figcaption>Physics PhD student</figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>“It feels closer to a good command-line utility than a writing app. That is the point.”</blockquote>
+            <figcaption>Data science PI</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple by design.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p>Core utilities for writing, cleaning, and sharing paper references.</p>
+            <a class="button secondary" href="https://github.com/epigani/paperbar-site/releases/latest/download/PaperBar.dmg">Download</a>
+          </article>
+          <article class="price-card highlighted reveal">
+            <h3>PaperBar Pro</h3>
+            <p class="price">One-time purchase</p>
+            <p>Planned for batch tools and advanced export options. No subscriptions.</p>
+            <a class="button primary" href="mailto:contact@paperbar.app?subject=PaperBar%20Pro">Get updates</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions researchers actually ask.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details open>
+            <summary>Does it work offline?</summary>
+            <p>Most utilities do. DOI metadata lookup needs the network because it asks Crossref for citation data.</p>
+          </details>
+          <details>
+            <summary>Does it support BibTeX?</summary>
+            <p>Yes. PaperBar can generate, clean, sort, deduplicate, copy, and export BibTeX.</p>
+          </details>
+          <details>
+            <summary>Do I need a Zotero account?</summary>
+            <p>No. PaperBar is not a reference manager and does not require a Zotero account.</p>
+          </details>
+          <details>
+            <summary>Is my data uploaded anywhere?</summary>
+            <p>Local tools stay on your Mac. DOI lookup sends the citation query to Crossref. There is no PaperBar server.</p>
+          </details>
+          <details>
+            <summary>Is PaperBar an AI assistant?</summary>
+            <p>No. It is a set of deterministic scientific-writing utilities.</p>
+          </details>
+          <details>
+            <summary>Why does macOS say the developer cannot be verified?</summary>
+            <p>The free beta is not notarized yet. After downloading, open the DMG, copy PaperBar to Applications, then Control-click PaperBar and choose Open.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top" aria-label="PaperBar home">
+        <span class="brand-mark">P</span>
+        <span>PaperBar</span>
+      </a>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/epigani/paperbar-site/releases/latest/download/PaperBar.dmg">Download</a>
+        <a href="https://github.com/epigani/paperbar-site/releases">Releases</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:contact@paperbar.app">Contact</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
