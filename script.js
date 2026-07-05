@@ -1,3 +1,14 @@
+const siteConfig = window.PaperBarConfig || {};
+
+document.querySelectorAll("[data-config-url]").forEach(element => {
+  const key = element.getAttribute("data-config-url");
+  const url = siteConfig[key];
+
+  if (url) {
+    element.setAttribute("href", url);
+  }
+});
+
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReducedMotion) {
