@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Troubleshooting PaperBar installation, macOS Services, and beta builds.">
+    <meta name="theme-color" content="#f7f5f1">
+    <title>Troubleshooting - PaperBar</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PaperBar home">
+        <span class="brand-mark">P</span>
+        <span>PaperBar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#features">Utilities</a>
+        <a href="index.html#install">Install</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/epigani/paperbar-site/releases/download/v0.1.0-beta.11/PaperBar.dmg">Download</a>
+    </header>
+
+    <main>
+      <section class="section legal-page">
+        <p class="eyebrow">Troubleshooting</p>
+        <h1>Common beta issues.</h1>
+        <p>PaperBar is a local macOS utility. Most issues during the beta come from Gatekeeper, Services registration, or PDFs that do not expose readable text.</p>
+
+        <h2>macOS says PaperBar is damaged or cannot be opened</h2>
+        <p>The current beta is not notarized. Drag PaperBar to Applications, Control-click the app, choose Open, then confirm. If macOS still blocks it, open System Settings &gt; Privacy &amp; Security and choose Open Anyway for PaperBar.</p>
+
+        <h2>Right-click actions do not appear</h2>
+        <p>PaperBar Services are registered by macOS from the app bundle. Make sure PaperBar is in Applications, open it once, then try Finder again. If the menu is still stale, log out and back in so macOS refreshes Services.</p>
+
+        <h2>Right-click action appears but seems to do nothing</h2>
+        <p>Most actions copy directly to the clipboard. Try pasting into a text editor. PaperBar also shows the latest Service result in its menu, such as “BibTeX copied” or an error message.</p>
+
+        <h2>Notifications do not appear</h2>
+        <p>Open System Settings &gt; Notifications and allow PaperBar notifications. The action still runs without notifications; the clipboard and PaperBar menu status are the source of truth.</p>
+
+        <h2>PDF DOI or references are not detected</h2>
+        <p>Some PDFs contain scanned pages, unusual metadata, or protected text. Try another PDF or copy the DOI/citation text into DOI to BibTeX. If a public paper fails, send the DOI or URL with diagnostic info.</p>
+
+        <h2>Send diagnostic info</h2>
+        <p>Open PaperBar Settings and click Copy Diagnostic Info. Paste it into a bug report or email. PaperBar does not send diagnostics automatically.</p>
+      </section>
+    </main>
+  </body>
+</html>
